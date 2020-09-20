@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ,KC_LCTL   ,MEH_T(KC_NO)   ,ALL_T(KC_NO),KC_LALT,KC_LGUI
                                          ,KC_HOME,KC_END
                                                  ,KC_PGUP
-                                 ,KC_BSPC,KC_DEL ,KC_PGDN
+                                 ,KC_SPC ,KC_BSPC,KC_PGDN
                                                                   // right hand
                                                                  ,KC_MINS ,KC_6 ,KC_7           ,KC_8   ,KC_9   ,KC_0             ,F(RSpec)
                                                                  ,KC_RBRC ,KC_Y ,KC_U           ,KC_I   ,KC_O   ,KC_P             ,F(RMdia)
@@ -85,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                 ,KC_RGUI        ,KC_RALT,KC_HYPR,KC_MEH           ,KC_RCTL
                                                                  ,KC_LEFT ,KC_RGHT
                                                                  ,KC_UP
-                                                                 ,KC_DOWN ,KC_ENT ,KC_SPC
+                                                                 ,KC_DOWN ,KC_DEL ,KC_ENT
 ),
 
 /******* Symbols Layer *************************************************************************************************
@@ -154,10 +154,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [MDIA] = LAYOUT_ergodox(
 // left hand
  KC_TRNS ,KC_F11   ,KC_F12  ,KC_F13   ,KC_F14  ,KC_F15  ,KC_ESC
-,KC_TRNS ,KC_POWER ,M(MUL)  ,KC_MS_U  ,M(MUR)  ,KC_VOLU ,KC_WH_U
-,KC_TRNS ,KC_SLEP  ,KC_MS_L ,KC_MS_D  ,KC_MS_R ,KC_VOLD
-,KC_TRNS ,KC_NO    ,M(MDL)  ,KC_MS_D  ,M(MDR)  ,KC_MUTE ,KC_WH_D
-,KC_NO ,KC_NO   ,KC_BTN3 ,KC_BTN1  ,KC_BTN2
+,KC_TRNS ,KC_NO    ,M(MUL)  ,KC_MS_U  ,M(MUR)  ,KC_VOLU ,KC_WH_U
+,KC_TRNS ,KC_NO    ,KC_MS_L ,KC_MS_D  ,KC_MS_R ,KC_VOLD
+,KC_TRNS ,KC_SLEP  ,M(MDL)  ,KC_MS_D  ,M(MDR)  ,KC_MUTE ,KC_WH_D
+,KC_NO   ,KC_NO    ,KC_BTN3 ,KC_BTN2  ,KC_BTN1
                                                ,KC_WSTP ,KC_WREF
                                                         ,KC_WSCH
                                       ,KC_WBAK ,KC_NO   ,KC_WHOM
